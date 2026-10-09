@@ -22,56 +22,56 @@ const projects = [
         id: 1,
         title: "Summer Music Festival",
         category: "POSTERS",
-        image: "portfolio/poster-01.webp",
+        image: "portfolio/poster-01.jpg",
         description: "Vibrant promotional poster design for a local outdoor music festival."
     },
     {
         id: 2,
         title: "City Marathon 2026",
         category: "SPORTS / EVENTS",
-        image: "portfolio/poster-02.webp",
+        image: "portfolio/poster-02.jpg",
         description: "Dynamic visual identity and promotional assets for a city marathon."
     },
     {
         id: 3,
         title: "Apex Fitness Brand Guidelines",
         category: "BRANDING",
-        image: "portfolio/poster-03.webp",
+        image: "portfolio/poster-03.jpg",
         description: "Complete visual identity, logo, and typography selection for a modern gym."
     },
     {
         id: 4,
         title: "Tech Startup Instagram Campaign",
         category: "SOCIAL MEDIA",
-        image: "portfolio/poster-04.webp",
+        image: "portfolio/poster-04.jpg",
         description: "A cohesive series of 12 Instagram posts designed for a product launch."
     },
     {
         id: 5,
         title: "Esports Tournament Deck",
         category: "SPONSORSHIP",
-        image: "portfolio/poster-05.webp",
+        image: "portfolio/poster-05.jpg",
         description: "Professional sponsorship pitch deck design for a regional esports league."
     },
     {
         id: 6,
         title: "Urban Cafe Logo",
         category: "LOGOS",
-        image: "portfolio/poster-06.webp",
+        image: "portfolio/poster-06.jpg",
         description: "Minimalist and elegant logo design for a specialty coffee shop."
     },
     {
         id: 7,
         title: "Product Launch Promo",
         category: "VIDEO",
-        image: "portfolio/poster-07.webp",
+        image: "portfolio/poster-07.jpg",
         description: "Short, engaging video edit for social media advertising."
     },
     {
         id: 8,
         title: "Corporate Annual Report",
         category: "OTHER",
-        image: "portfolio/poster-08.webp",
+        image: "portfolio/poster-08.jpg",
         description: "Clean, layout-driven multi-page corporate report design."
     }
 ];
