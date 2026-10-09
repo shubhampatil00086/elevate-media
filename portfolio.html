@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | ELEVATE MEDIA</title>
+    <meta name="description" content="View the creative design portfolio of Elevate Media, featuring poster design, branding, sports creatives, and social media work.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body class="page-portfolio">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">ELEVATE MEDIA</a>
+            
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html#hero" class="nav-link">Home</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="portfolio.html" class="nav-link active">Work</a></li>
+                    <li><a href="index.html#process" class="nav-link">Process</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="portfolio-page-header">
+            <div class="container text-center reveal">
+                <h1 class="hero-title">OUR PORTFOLIO</h1>
+                <p class="hero-desc mx-auto">Explore our diverse range of professional creative projects.</p>
+            </div>
+        </section>
+
+        <section class="portfolio-main-section">
+            <div class="container">
+                <!-- Filters -->
+                <div class="portfolio-filters reveal" id="filters-container">
+                    <button class="filter-btn active" data-filter="ALL">ALL</button>
+                    <button class="filter-btn" data-filter="POSTERS">POSTERS</button>
+                    <button class="filter-btn" data-filter="SPORTS / EVENTS">SPORTS / EVENTS</button>
+                    <button class="filter-btn" data-filter="BRANDING">BRANDING</button>
+                    <button class="filter-btn" data-filter="SOCIAL MEDIA">SOCIAL MEDIA</button>
+                    <button class="filter-btn" data-filter="SPONSORSHIP">SPONSORSHIP</button>
+                    <button class="filter-btn" data-filter="LOGOS">LOGOS</button>
+                    <button class="filter-btn" data-filter="VIDEO">VIDEO</button>
+                    <button class="filter-btn" data-filter="OTHER">OTHER</button>
+                </div>
+
+                <!-- JS will inject all projects here -->
+                <div id="full-portfolio-grid" class="portfolio-grid reveal"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">ELEVATE MEDIA</a>
+                <p class="tagline">BUILD YOUR BRAND</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html#hero">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#services">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://instagram.com/elevatemediadesign" target="_blank" aria-label="Instagram">Instagram</a>
+                <a href="https://wa.me/918669241982" target="_blank" aria-label="WhatsApp">WhatsApp</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Elevate Media. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox (Shared logic) -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close Lightbox">&times;</button>
+            <div class="lightbox-image-container">
+                <img id="lightbox-img" src="" alt="Project Image">
+                <button class="lightbox-prev" aria-label="Previous Project">&#10094;</button>
+                <button class="lightbox-next" aria-label="Next Project">&#10095;</button>
+            </div>
+            <div class="lightbox-info">
+                <span id="lightbox-category" class="small-label"></span>
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-desc"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/918669241982" target="_blank" class="floating-wa" aria-label="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12.031 0C5.383 0 0 5.383 0 12.031c0 2.128.552 4.195 1.6 6.016L.268 23.364l5.474-1.435a11.961 11.961 0 006.29 1.768h.004c6.648 0 12.03-5.382 12.03-12.031S18.679 0 12.031 0zm0 21.688c-1.782 0-3.527-.478-5.055-1.385l-.362-.214-3.757.985.998-3.664-.236-.375A10.016 10.016 0 012.012 12.03c0-5.523 4.494-10.018 10.02-10.018 5.525 0 10.018 4.494 10.018 10.018s-4.493 10.018-10.019 10.018zm5.503-7.518c-.302-.151-1.786-.883-2.064-.984-.277-.101-.48-.151-.682.152-.202.302-.782.984-.959 1.185-.176.202-.353.227-.655.076-1.503-.755-2.613-1.467-3.613-3.2-.176-.302-.019-.465.132-.616.136-.136.302-.353.454-.53.151-.176.202-.301.302-.504.101-.201.05-.377-.025-.529-.076-.151-.682-1.644-.934-2.249-.245-.591-.496-.511-.682-.52-.176-.01-.378-.01-.58-.01-.202 0-.53.076-.807.378-.277.302-1.059 1.034-1.059 2.52 0 1.486 1.084 2.923 1.235 3.124.151.202 2.13 3.253 5.161 4.56.721.312 1.284.498 1.724.638.724.23 1.383.197 1.9.119.58-.088 1.786-.731 2.038-1.436.252-.705.252-1.31.176-1.437-.076-.126-.277-.201-.58-.352z"/></svg>
+        <span class="wa-text">CHAT WITH US</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
